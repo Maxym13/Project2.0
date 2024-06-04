@@ -1,0 +1,254 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header__logo {
+    background-color: #EC3030;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.header__menu-item {
+    margin-right: 20px;
+}
+
+.header__menu-link {
+    text-decoration: none;
+    color: #212121;
+    background-color: #7F2AEB;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.header__menu-link:hover {
+    background-color: #6822c5;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.about__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.about__profile-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    cursor: pointer; 
+}
+
+.about__text-container {
+    margin-left: 20px;
+    max-width: 500px;
+}
+
+.about__name {
+    font-size: 2em;
+    margin: 0;
+}
+
+.about__description {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.about__order-button {
+    background-color: #6c1db8;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.about__order-button:hover {
+    background-color: #5000a3;
+}
+
+.about__extra-img {
+    width: 626px;
+    height: 417px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.services__service {
+    background-color: white;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 290px;
+    text-align: center;
+    margin: 0 10px;
+    transition: transform 0.3s;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    position: relative;
+}
+
+.services__img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.services__text {
+    font-size: 1.6em;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.services__service:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer__contacts, .footer__author {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer__contacts-title, .footer__contacts-info, .footer__author-info {
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+.footer__back-to-top {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.footer__back-to-top-button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #6c1db8;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.footer__back-to-top-button:hover {
+    background-color: #5000a3;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal__content {
+    background-color: #7F2AEB;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    color: white;
+    font-size: 1.2em;
+}
+
+.modal__close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal__close:hover,
+.modal__close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer-index1 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}

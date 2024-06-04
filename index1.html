@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Андріуца Максим Миколайович</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <a href="#" class="header__logo" id="home">Головна</a>
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__menu-item"><a href="#" class="header__menu-link" id="about">Про мене</a></li>
+                    <li class="header__menu-item"><a href="#" class="header__menu-link" id="contacts">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="content">
+        <section class="about">
+            <div class="about__content">
+                <img src="image/avatar.jpg" alt="Андріуца Максим Миколайович" class="about__profile-img" id="profileImage">
+                <div class="about__text-container">
+                    <p class="about__name">Андріуца Максим Миколайович</p>
+                    <div class="about__description">
+                        Я професійний дизайнер, який пропонує послуги розробки веб-сайтів у Figma. Я використовую цей інструмент для того, щоб створити для вас макет вашого майбутнього веб-сайту. Ви можете бути впевнені, що я зроблю все можливе, щоб зробити ваш сайт ефективним та привабливим для ваших користувачів.
+                    </div>
+                    <button class="about__order-button" id="openOrderFormButton">Замовити послугу</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer class="footer footer-index1">
+        <div class="footer__container container">
+            <div class="footer__contacts">
+                <p class="footer__contacts-title">Контакти</p>
+                <p class="footer__contacts-info">+38 (098) 765-43-21</p>
+                <p class="footer__contacts-info">+38 (068) 987-65-43</p>
+                <p class="footer__contacts-info">+38 (093) 456-78-90</p>
+            </div>
+            <div class="footer__back-to-top">
+                <button class="footer__back-to-top-button" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">До початку</button>
+            </div>
+            <div class="footer__author">
+                <p class="footer__author-info">Андріуца Максим Миколайович © 2024</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="contacts-modal" class="modal">
+        <div class="modal__content">
+            <span class="modal__close" onclick="closeContacts()">&times;</span>
+            <p>+38 (098) 765-43-21</p>
+            <p>+38 (068) 987-65-43</p>
+            <p>+38 (093) 456-78-90</p>
+        </div>
+    </div>
+
+    <div id="about-modal" class="modal">
+        <div class="modal__content">
+            <span class="modal__close" onclick="closeAboutModal()">&times;</span>
+            <div id="about-modal-content"></div>
+        </div>
+    </div>
+
+    <div id="order-modal" class="modal">
+        <div class="modal__content">
+            <span class="modal__close" onclick="closeOrderForm()">&times;</span>
+            <form>
+                <label for="name">Ім'я:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="patronymic">По батькові:</label><br>
+                <input type="text" id="patronymic" name="patronymic"><br>
+                <label for="phone">Номер телефону:</label><br>
+                <input type="text" id="phone" name="phone"><br><br>
+                <input type="submit" value="Підтвердити">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
